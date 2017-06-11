@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2711ED901EC801F300A7C115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED8F1EC801F300A7C115 /* AppDelegate.swift */; };
-		2711ED921EC801F300A7C115 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED911EC801F300A7C115 /* FirstViewController.swift */; };
-		2711ED941EC801F300A7C115 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED931EC801F300A7C115 /* SecondViewController.swift */; };
+		2711ED921EC801F300A7C115 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED911EC801F300A7C115 /* HomeViewController.swift */; };
+		2711ED941EC801F300A7C115 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED931EC801F300A7C115 /* NotificationViewController.swift */; };
 		2711ED971EC801F300A7C115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2711ED951EC801F300A7C115 /* Main.storyboard */; };
 		2711ED991EC801F300A7C115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2711ED981EC801F300A7C115 /* Assets.xcassets */; };
 		2711ED9C1EC801F300A7C115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2711ED9A1EC801F300A7C115 /* LaunchScreen.storyboard */; };
 		2711EDA71EC801F300A7C115 /* IdeaShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDA61EC801F300A7C115 /* IdeaShareTests.swift */; };
 		2711EDB21EC801F300A7C115 /* IdeaShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDB11EC801F300A7C115 /* IdeaShareUITests.swift */; };
+		2711EDC01EC80A7E00A7C115 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDBF1EC80A7E00A7C115 /* MessageViewController.swift */; };
+		2711EDC21EC80A9700A7C115 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDC11EC80A9700A7C115 /* PopularViewController.swift */; };
+		2711EDC41EC80ABC00A7C115 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */; };
+		2711EDC61EC80AD800A7C115 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDC51EC80AD800A7C115 /* SearchViewController.swift */; };
+		2711EDC81EC8277F00A7C115 /* あがりお.png in Resources */ = {isa = PBXBuildFile; fileRef = 2711EDC71EC8277F00A7C115 /* あがりお.png */; };
+		2795A7951EECEBC3002249F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */; };
+		2795A7961EECEBC3002249F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */; };
+		2795A7971EECEBC8002249F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED911EC801F300A7C115 /* HomeViewController.swift */; };
+		2795A7981EECEBC9002249F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711ED911EC801F300A7C115 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +46,8 @@
 /* Begin PBXFileReference section */
 		2711ED8C1EC801F300A7C115 /* IdeaShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2711ED8F1EC801F300A7C115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2711ED911EC801F300A7C115 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2711ED931EC801F300A7C115 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2711ED911EC801F300A7C115 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2711ED931EC801F300A7C115 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2711ED961EC801F300A7C115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2711ED981EC801F300A7C115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2711ED9B1EC801F300A7C115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,11 @@
 		2711EDAD1EC801F300A7C115 /* IdeaShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeaShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2711EDB11EC801F300A7C115 /* IdeaShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaShareUITests.swift; sourceTree = "<group>"; };
 		2711EDB31EC801F300A7C115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2711EDBF1EC80A7E00A7C115 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		2711EDC11EC80A9700A7C115 /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2711EDC51EC80AD800A7C115 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2711EDC71EC8277F00A7C115 /* あがりお.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "あがりお.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +113,17 @@
 		2711ED8E1EC801F300A7C115 /* IdeaShare */ = {
 			isa = PBXGroup;
 			children = (
+				2711EDC71EC8277F00A7C115 /* あがりお.png */,
 				2711ED8F1EC801F300A7C115 /* AppDelegate.swift */,
-				2711ED911EC801F300A7C115 /* FirstViewController.swift */,
-				2711ED931EC801F300A7C115 /* SecondViewController.swift */,
+				2711ED911EC801F300A7C115 /* HomeViewController.swift */,
+				2711ED931EC801F300A7C115 /* NotificationViewController.swift */,
+				2711EDBF1EC80A7E00A7C115 /* MessageViewController.swift */,
+				2711EDC11EC80A9700A7C115 /* PopularViewController.swift */,
+				2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */,
+				2711EDC51EC80AD800A7C115 /* SearchViewController.swift */,
 				2711ED951EC801F300A7C115 /* Main.storyboard */,
-				2711ED981EC801F300A7C115 /* Assets.xcassets */,
 				2711ED9A1EC801F300A7C115 /* LaunchScreen.storyboard */,
+				2711ED981EC801F300A7C115 /* Assets.xcassets */,
 				2711ED9D1EC801F300A7C115 /* Info.plist */,
 			);
 			path = IdeaShare;
@@ -237,6 +256,7 @@
 			files = (
 				2711ED9C1EC801F300A7C115 /* LaunchScreen.storyboard in Resources */,
 				2711ED991EC801F300A7C115 /* Assets.xcassets in Resources */,
+				2711EDC81EC8277F00A7C115 /* あがりお.png in Resources */,
 				2711ED971EC801F300A7C115 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2711ED941EC801F300A7C115 /* SecondViewController.swift in Sources */,
+				2711EDC41EC80ABC00A7C115 /* ProfileViewController.swift in Sources */,
+				2711EDC61EC80AD800A7C115 /* SearchViewController.swift in Sources */,
+				2711ED941EC801F300A7C115 /* NotificationViewController.swift in Sources */,
+				2711EDC21EC80A9700A7C115 /* PopularViewController.swift in Sources */,
 				2711ED901EC801F300A7C115 /* AppDelegate.swift in Sources */,
-				2711ED921EC801F300A7C115 /* FirstViewController.swift in Sources */,
+				2711EDC01EC80A7E00A7C115 /* MessageViewController.swift in Sources */,
+				2711ED921EC801F300A7C115 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2795A7951EECEBC3002249F4 /* ProfileViewController.swift in Sources */,
 				2711EDA71EC801F300A7C115 /* IdeaShareTests.swift in Sources */,
+				2795A7971EECEBC8002249F4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2795A7961EECEBC3002249F4 /* ProfileViewController.swift in Sources */,
 				2711EDB21EC801F300A7C115 /* IdeaShareUITests.swift in Sources */,
+				2795A7981EECEBC9002249F4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +535,7 @@
 				2711EDB81EC801F300A7C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2711EDB91EC801F300A7C115 /* Build configuration list for PBXNativeTarget "IdeaShareTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +544,7 @@
 				2711EDBB1EC801F300A7C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2711EDBC1EC801F300A7C115 /* Build configuration list for PBXNativeTarget "IdeaShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +553,7 @@
 				2711EDBE1EC801F300A7C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
