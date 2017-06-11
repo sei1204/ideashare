@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    var tubuyakiNum: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,11 +42,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
         cell.textLabel?.text = "文字列"
         
-        
-        
         //cellに表示する文字(テキストビューからのアクセス可にする)
-        cell.textLabel?.text = "テキスト" //ユーザ名
-        cell.detailTextLabel?.text = "サブテキスト"//ユーザID
+        cell.textLabel?.text = "れべあげ" //ユーザ名
+        cell.detailTextLabel?.text = "@HIJIKI"//ユーザID
         //つぶやきをlabelに代入して表示させる
         
         //cellに表示する文字の色(テキストビューからのアクセス可にする)
@@ -58,21 +58,30 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 15)
         
         //profileImage(プロフィール画像)
-//        profileImage.image = UIImage(named: "あがりお.png")
+        profileImage.image = UIImage(named: "あがりお.png")
         
         //cellに表示する画像(アイコン)
-        cell.imageView?.image = UIImage(named: "あがりお.png")//大きさをちょうどよくする
+        cell.imageView?.image = profileImage.image//大きさをちょうどよくする
+        
+        cell.imageView?.layer.cornerRadius = (profileImage.frame.size.height * 0.5)
         
         //cellの背景色
         cell.backgroundColor = UIColor.white
         
         //cellのアクセサリタイプ
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        cell.accessoryType = UITableViewCellAccessoryType.none
+        
         
         //cellを返す
         return cell
     }
 
+    @IBAction func tubuyaku() {
+        print("つぶやきが投稿されました。")
+        tubuyakiNum += 1
+        print("このつぶやきは\(tubuyakiNum)番目のつぶやきです。")
+    }
+    
     /*
     // MARK: - Navigation
 

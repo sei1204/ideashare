@@ -35,8 +35,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.rowHeight = 100
         
         //cellに表示する文字(テキストビューからのアクセス可にする)
-        cell.textLabel?.text = "テキスト" //ユーザ名
-        cell.detailTextLabel?.text = "サブテキスト"//ユーザID
+        cell.textLabel?.text = "れべあげ" //ユーザ名
+        cell.detailTextLabel?.text = "@HIJIKI"//ユーザID
         
         
         //cellに表示する文字の色(テキストビューからのアクセス可にする)
@@ -55,7 +55,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.backgroundColor = UIColor.white
         
         //cellのアクセサリタイプ
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        cell.accessoryType = UITableViewCellAccessoryType.none
         
         
         return cell
