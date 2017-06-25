@@ -27,7 +27,9 @@
 		2795A7D61EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
 		2795A7D71EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
 		2795A7D81EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
-		B254DE941EFF75060013CCA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE931EFF75060013CCA7 /* LoginViewController.swift */; };
+		B254DE941EFF75060013CCA7 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE931EFF75060013CCA7 /* CreateViewController.swift */; };
+		B254DE961EFF91A50013CCA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE951EFF91A50013CCA7 /* LoginViewController.swift */; };
+		B254DE981EFF91F50013CCA7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,9 @@
 		2711EDC51EC80AD800A7C115 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2711EDC71EC8277F00A7C115 /* あがりお.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "あがりお.png"; sourceTree = "<group>"; };
 		2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TubuyakuViewController.swift; sourceTree = "<group>"; };
-		B254DE931EFF75060013CCA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B254DE931EFF75060013CCA7 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		B254DE951EFF91A50013CCA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +131,9 @@
 				2711EDC11EC80A9700A7C115 /* PopularViewController.swift */,
 				2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */,
 				2711EDC51EC80AD800A7C115 /* SearchViewController.swift */,
-				B254DE931EFF75060013CCA7 /* LoginViewController.swift */,
+				B254DE931EFF75060013CCA7 /* CreateViewController.swift */,
+				B254DE951EFF91A50013CCA7 /* LoginViewController.swift */,
+				B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */,
 				2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */,
 				2711ED951EC801F300A7C115 /* Main.storyboard */,
 				2711ED9A1EC801F300A7C115 /* LaunchScreen.storyboard */,
@@ -218,7 +224,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "三城聖";
 				TargetAttributes = {
 					2711ED8B1EC801F300A7C115 = {
@@ -290,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B254DE941EFF75060013CCA7 /* LoginViewController.swift in Sources */,
+				B254DE941EFF75060013CCA7 /* CreateViewController.swift in Sources */,
 				2795A7D61EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */,
 				2711EDC41EC80ABC00A7C115 /* ProfileViewController.swift in Sources */,
 				2711EDC61EC80AD800A7C115 /* SearchViewController.swift in Sources */,
@@ -298,6 +304,8 @@
 				2711EDC21EC80A9700A7C115 /* PopularViewController.swift in Sources */,
 				2711ED901EC801F300A7C115 /* AppDelegate.swift in Sources */,
 				2711EDC01EC80A7E00A7C115 /* MessageViewController.swift in Sources */,
+				B254DE961EFF91A50013CCA7 /* LoginViewController.swift in Sources */,
+				B254DE981EFF91F50013CCA7 /* LaunchScreenViewController.swift in Sources */,
 				2711ED921EC801F300A7C115 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +385,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -426,6 +435,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

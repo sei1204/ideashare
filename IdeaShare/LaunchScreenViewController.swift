@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LaunchScreenViewController.swift
 //  IdeaShare
 //
 //  Created by 三城聖 on 2017/06/25.
@@ -8,12 +8,17 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LaunchScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // ナビバーの表示を切り替える
+        if let nv = navigationController {
+            let hidden = !nv.isNavigationBarHidden
+            nv.setNavigationBarHidden(hidden, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
