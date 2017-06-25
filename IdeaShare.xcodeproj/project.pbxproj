@@ -27,6 +27,7 @@
 		2795A7D61EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
 		2795A7D71EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
 		2795A7D81EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */; };
+		B254DE941EFF75060013CCA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE931EFF75060013CCA7 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		2711EDC51EC80AD800A7C115 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2711EDC71EC8277F00A7C115 /* あがりお.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "あがりお.png"; sourceTree = "<group>"; };
 		2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TubuyakuViewController.swift; sourceTree = "<group>"; };
+		B254DE931EFF75060013CCA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +127,12 @@
 				2711EDC11EC80A9700A7C115 /* PopularViewController.swift */,
 				2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */,
 				2711EDC51EC80AD800A7C115 /* SearchViewController.swift */,
+				B254DE931EFF75060013CCA7 /* LoginViewController.swift */,
+				2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */,
 				2711ED951EC801F300A7C115 /* Main.storyboard */,
 				2711ED9A1EC801F300A7C115 /* LaunchScreen.storyboard */,
 				2711ED981EC801F300A7C115 /* Assets.xcassets */,
 				2711ED9D1EC801F300A7C115 /* Info.plist */,
-				2795A7D51EED1DB0002249F4 /* TubuyakuViewController.swift */,
 			);
 			path = IdeaShare;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B254DE941EFF75060013CCA7 /* LoginViewController.swift in Sources */,
 				2795A7D61EED1DB0002249F4 /* TubuyakuViewController.swift in Sources */,
 				2711EDC41EC80ABC00A7C115 /* ProfileViewController.swift in Sources */,
 				2711EDC61EC80AD800A7C115 /* SearchViewController.swift in Sources */,
