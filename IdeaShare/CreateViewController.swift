@@ -15,6 +15,8 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userIDTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    let textFields = [1: "mailAddressTextField", 2: "userNameTextField", 3: "userIDTextField", 4: "passwordTextField"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +28,7 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         userIDTextField.delegate = self
         passwordTextField.delegate = self
         
+        //パスワード形式にする
         passwordTextField.isSecureTextEntry = true
     }
 
@@ -55,6 +58,67 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return true
+    }
+    
+    //画面に表示される直前
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.configureObserver()
+    }
+    
+    //別の画面に遷移する直前
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeObserver()
+    }
+    
+    //Notification設定
+    func configureObserver() {
+        let notification = NotificationCenter.default
+        notification.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        notification.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    //Notification削除
+    func removeObserver() {
+        
+        let notification = NotificationCenter.default
+        notification.removeObserver(self)
+    }
+    
+    //キーボードが現れた時に画面をずらす
+    func keyboardWillShow(notification: Notification?) {
+        
+        if mailAddressTextField.isEditing == true  {
+            
+        }else if userNameTextField.isEditing == true {
+            let rect = (notification?.userInfo?[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+            let duration: TimeInterval? = notification?.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
+            UIView.animate(withDuration: duration!, animations: { () in let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
+                self.view.transform = transform
+            })
+        }else if userIDTextField.isEditing == true {
+            let rect = (notification?.userInfo?[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+            let duration: TimeInterval? = notification?.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
+            UIView.animate(withDuration: duration!, animations: { () in let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
+                self.view.transform = transform
+            })
+        }else {
+            let rect = (notification?.userInfo?[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+            let duration: TimeInterval? = notification?.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
+            UIView.animate(withDuration: duration!, animations: { () in let transform = CGAffineTransform(translationX: 0, y: -(rect.size.height))
+                self.view.transform = transform
+            })
+        }
+    }
+    
+    //キーボードが消えた時に画面を戻す
+    func keyboardWillHide(notification: Notification?) {
+        let duration: TimeInterval? = notification?.userInfo?[UIKeyboardAnimationCurveUserInfoKey] as? Double
+        UIView.animate(withDuration: duration!, animations: { () in
+            
+            self.view.transform = CGAffineTransform.identity
+        })
     }
     
     /*

@@ -1,5 +1,5 @@
 //
-//  TubuyakuViewController.swift
+//  TsubuyakuViewController.swift
 //  IdeaShare
 //
 //  Created by 三城聖 on 2017/06/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TubuyakuViewController: UIViewController {
+class TsubuyakuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
