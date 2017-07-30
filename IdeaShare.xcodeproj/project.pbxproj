@@ -27,6 +27,7 @@
 		2795A7D61EED1DB0002249F4 /* TsubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TsubuyakuViewController.swift */; };
 		2795A7D71EED1DB0002249F4 /* TsubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TsubuyakuViewController.swift */; };
 		2795A7D81EED1DB0002249F4 /* TsubuyakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795A7D51EED1DB0002249F4 /* TsubuyakuViewController.swift */; };
+		B24A79581F2C1BFE0066A39A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A79571F2C1BFE0066A39A /* User.swift */; };
 		B254DE941EFF75060013CCA7 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE931EFF75060013CCA7 /* CreateViewController.swift */; };
 		B254DE961EFF91A50013CCA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE951EFF91A50013CCA7 /* LoginViewController.swift */; };
 		B254DE981EFF91F50013CCA7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */; };
@@ -70,6 +71,7 @@
 		2711EDC51EC80AD800A7C115 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2711EDC71EC8277F00A7C115 /* あがりお.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "あがりお.png"; sourceTree = "<group>"; };
 		2795A7D51EED1DB0002249F4 /* TsubuyakuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TsubuyakuViewController.swift; sourceTree = "<group>"; };
+		B24A79571F2C1BFE0066A39A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B254DE931EFF75060013CCA7 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		B254DE951EFF91A50013CCA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				2711EDC31EC80ABC00A7C115 /* ProfileViewController.swift */,
 				2711EDC51EC80AD800A7C115 /* SearchViewController.swift */,
 				B254DE931EFF75060013CCA7 /* CreateViewController.swift */,
+				B24A79571F2C1BFE0066A39A /* User.swift */,
 				B254DE951EFF91A50013CCA7 /* LoginViewController.swift */,
 				B254DE971EFF91F50013CCA7 /* LaunchScreenViewController.swift */,
 				2795A7D51EED1DB0002249F4 /* TsubuyakuViewController.swift */,
@@ -304,6 +307,7 @@
 				2711EDC21EC80A9700A7C115 /* PopularViewController.swift in Sources */,
 				2711ED901EC801F300A7C115 /* AppDelegate.swift in Sources */,
 				2711EDC01EC80A7E00A7C115 /* MessageViewController.swift in Sources */,
+				B24A79581F2C1BFE0066A39A /* User.swift in Sources */,
 				B254DE961EFF91A50013CCA7 /* LoginViewController.swift in Sources */,
 				B254DE981EFF91F50013CCA7 /* LaunchScreenViewController.swift in Sources */,
 				2711ED921EC801F300A7C115 /* HomeViewController.swift in Sources */,

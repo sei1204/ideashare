@@ -10,6 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    var account: CreateAccount!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +31,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //cell内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
+        
         //インスタンス作成
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "myCell")
         cell.textLabel?.text = "文字列"
@@ -35,9 +40,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.rowHeight = 100
         
         //cellに表示する文字(テキストビューからのアクセス可にする)
-        cell.textLabel?.text = "れべあげ" //ユーザ名
-        cell.detailTextLabel?.text = "@HIJIKI"//ユーザID
-        
+        cell.textLabel?.text = account.userName //ユーザ名
+        cell.detailTextLabel?.text = account.userID//ユーザID
         
         //cellに表示する文字の色(テキストビューからのアクセス可にする)
         cell.textLabel?.textColor = UIColor.black

@@ -38,8 +38,13 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
     }
     
     //アカウント作成
-    @IBAction func CreateAccount() {
-        
+    @IBAction func createAccount() {
+        if mailAddressTextField.text != nil && userNameTextField.text != nil && userIDTextField.text != nil && passwordTextField != nil {
+            var account = CreateAccount(mailAddress: mailAddressTextField.text!, userName: userNameTextField.text!, userID: userIDTextField.text!, password: passwordTextField.text!)
+        }else{
+            let errorAlert: UIAlertController = UIAlertController(title: "エラー", message: "全ての入力欄に入力してください", preferredStyle: .alert)
+            present(errorAlert, animated: true, completion: nil)
+        }
     }
     
     /*
@@ -89,8 +94,9 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
     //キーボードが現れた時に画面をずらす
     func keyboardWillShow(notification: Notification?) {
         
-        if mailAddressTextField.isEditing == true  {
+        if mailAddressTextField.isEditing == true {
             
+        
         }else if userNameTextField.isEditing == true {
             let rect = (notification?.userInfo?[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
             let duration: TimeInterval? = notification?.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
