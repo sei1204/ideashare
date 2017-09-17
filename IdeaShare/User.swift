@@ -8,8 +8,10 @@
 
 import UIKit
 
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
 //アカウントを作る
-class CreateAccount {
+struct CreateAccountInformation {
     var mailAddress: String = ""
     var userName: String = ""
     var userID: String = ""
@@ -21,10 +23,17 @@ class CreateAccount {
         self.userID = userID
         self.password = password
     }
+    
+    init(userName: String, userID: String) {
+        self.userName = userName
+        self.userID = userID
+    }
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
 
 //自分の情報
-class Me {
+struct MeInformation {
     var userName: String = ""
     var userID: String = ""
     var tsubuyaki: String = ""
@@ -47,10 +56,19 @@ class Me {
         self.userLanguage = userLanguage
     }
     
+    init(userName: String){
+        self.userName = userName
+    }
+    
+    init(userID: String) {
+        self.userID = userID
+    }
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
 
 //他人の情報
-class User {
+struct UserInformation {
     var userName: String = ""
     var userID: String = ""
     var tsubuyaki: String = ""
@@ -75,8 +93,10 @@ class User {
     
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
 //つぶやきを読み込む
-class UserTsubuyaki {
+struct UserTsubuyaki {
     var tsubuyakiTime: NSDate?
     var RTCount: Int?
     var favoriteCount: Int?
@@ -91,3 +111,5 @@ class UserTsubuyaki {
         self.replyCount = replyCount
     }
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------*/

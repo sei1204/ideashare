@@ -10,8 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    var account: CreateAccount!
+    /*-------------------------------------------------------------------------------------------------------------------------*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,26 +22,29 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
 
+    var accountName: String = ""
+    var accountID: String = ""
+    
+    /*-------------------------------------------------------------------------------------------------------------------------*/
+    
     //cell行数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
+    
     //cell内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
+        //cell定数
         
         //インスタンス作成
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "myCell")
         cell.textLabel?.text = "文字列"
-        
         tableView.rowHeight = 100
         
         //cellに表示する文字(テキストビューからのアクセス可にする)
-        cell.textLabel?.text = account.userName //ユーザ名
-        cell.detailTextLabel?.text = account.userID//ユーザID
-        
+        cell.textLabel?.text = "ui"//ユーザ名
+        cell.detailTextLabel?.text = "test"//ユーザID
         //cellに表示する文字の色(テキストビューからのアクセス可にする)
         cell.textLabel?.textColor = UIColor.black
         cell.detailTextLabel?.textColor = UIColor.gray
@@ -60,7 +62,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //cellのアクセサリタイプ
         cell.accessoryType = UITableViewCellAccessoryType.none
-        
         
         return cell
     }

@@ -8,19 +8,15 @@
 
 import UIKit
 
-class CreateViewController: UIViewController, UITextFieldDelegate {
-
+class CAViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet var mailAddressTextField: UITextField!
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var userIDTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    let textFields = [1: "mailAddressTextField", 2: "userNameTextField", 3: "userIDTextField", 4: "passwordTextField"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         //delegateの設定
         mailAddressTextField.delegate = self
@@ -37,15 +33,24 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    /*-------------------------------------------------------------------------------------------------------------------------*/
+    
     //アカウント作成
     @IBAction func createAccount() {
         if mailAddressTextField.text != nil && userNameTextField.text != nil && userIDTextField.text != nil && passwordTextField != nil {
-            var account = CreateAccount(mailAddress: mailAddressTextField.text!, userName: userNameTextField.text!, userID: userIDTextField.text!, password: passwordTextField.text!)
-        }else{
+            
+           //インスタンス作成
+            let account = CreateAccountInformation(mailAddress: mailAddressTextField.text!, userName: userNameTextField.text!, userID: userIDTextField.text!, password: passwordTextField.text!)
+       
+            let information = CreateAccountInformation(userName: userNameTextField.text!, userID: userIDTextField.text!)
+            
+        }else {
             let errorAlert: UIAlertController = UIAlertController(title: "エラー", message: "全ての入力欄に入力してください", preferredStyle: .alert)
             present(errorAlert, animated: true, completion: nil)
         }
     }
+    
+    /*-------------------------------------------------------------------------------------------------------------------------*/
     
     /*
      UITextFieldが編集終了する直前に呼ばれるデリゲートメソッド.
@@ -64,6 +69,8 @@ class CreateViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
+    
+    /*-------------------------------------------------------------------------------------------------------------------------*/
     
     //画面に表示される直前
     override func viewWillAppear(_ animated: Bool) {

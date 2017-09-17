@@ -27,9 +27,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     @IBOutlet var profileImage: UIImageView!
-    
     @IBOutlet var tableView: UITableView!
     
+    /*-------------------------------------------------------------------------------------------------------------------------*/
+
     //cell行数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -43,8 +44,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.textLabel?.text = "文字列"
         
         //cellに表示する文字(テキストビューからのアクセス可にする)
-        cell.textLabel?.text = "れべあげ" //ユーザ名
-        cell.detailTextLabel?.text = "@HIJIKI"//ユーザID
+        cell.textLabel?.text = "ui" //ユーザ名
+        cell.detailTextLabel?.text = "test"//ユーザID
         //つぶやきをlabelに代入して表示させる
         
         //cellに表示する文字の色(テキストビューからのアクセス可にする)
@@ -71,11 +72,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         //cellのアクセサリタイプ
         cell.accessoryType = UITableViewCellAccessoryType.none
         
-        
         //cellを返す
         return cell
     }
-
+    
     @IBAction func tubuyaku() {
         print("つぶやきが投稿されました。")
         tubuyakiNum += 1

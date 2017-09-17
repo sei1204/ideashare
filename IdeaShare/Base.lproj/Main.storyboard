@@ -245,14 +245,30 @@
                                     <navigationItem title="Title" id="rLq-Pr-4la"/>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="AVm-Rr-Yfz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1bb-vW-dVS"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Searchview.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-yS-sfZ">
+                                <rect key="frame" x="111" y="177" width="152" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AVm-Rr-Yfz" secondAttribute="trailing" id="EOE-y1-tZR"/>
+                            <constraint firstItem="AVm-Rr-Yfz" firstAttribute="leading" secondItem="0kz-Pn-mt6" secondAttribute="leading" id="hQL-t6-FVT"/>
+                            <constraint firstItem="AVm-Rr-Yfz" firstAttribute="top" secondItem="5up-V7-yJ6" secondAttribute="bottom" id="uRz-Ro-gdw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="vwa-tZ-WDW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzV-vP-ML1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4391" y="1953"/>
+            <point key="canvasLocation" x="-4391.1999999999998" y="1952.473763118441"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="yfR-8f-qjg">
@@ -373,7 +389,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Create!"/>
                                 <connections>
-                                    <action selector="CreateAccount" destination="y7x-Vi-9Pw" eventType="touchUpInside" id="1JT-Ac-kUI"/>
+                                    <action selector="createAccount" destination="y7x-Vi-9Pw" eventType="touchUpInside" id="3HA-Ob-CbX"/>
                                     <segue destination="49e-Tb-3d3" kind="show" id="Xzi-E1-blX"/>
                                 </connections>
                             </button>
@@ -691,6 +707,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Searchview.jpg" width="156" height="156"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="あがりお.png" width="391" height="391"/>
